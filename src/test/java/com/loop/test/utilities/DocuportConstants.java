@@ -18,5 +18,8 @@ public class DocuportConstants {
 
     public static final String RESET_PASSWORD_EMAIL = "forgotpasswordg1@gmail.com";
 
+    public static final String USERNAME_ADVISOR = "b1g1_advisor@gmail.com";
+    public static final String PASSWORD_ADVISOR = "Group1";
+
     //We use static because it lets us call these by class name
 }
