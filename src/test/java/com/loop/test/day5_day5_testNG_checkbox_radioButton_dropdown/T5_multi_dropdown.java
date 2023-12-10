@@ -34,6 +34,7 @@ public class T5_multi_dropdown {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
+
     @AfterMethod
     public void teardownMethod(){
         //  driver.close();
