@@ -72,6 +72,5 @@ public class T5_multi_dropdown {
         }
         Thread.sleep(2000);
         dropdown.deselectAll();
-
     }
 }
