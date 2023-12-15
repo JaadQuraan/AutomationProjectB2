@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
 public class TestBase {
-  public  WebDriver driver;
+  public static WebDriver driver;
 
     @BeforeMethod
     public void setUpMethod(){
