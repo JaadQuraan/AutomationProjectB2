@@ -4,6 +4,7 @@ import com.loop.test.utilities.DocuportConstants;
 import com.loop.test.utilities.WebDriverFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -22,6 +23,7 @@ public class T3_getAttribute_css {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.get("https://beta.docuport.app/");
+
         //identify logo with css
         WebElement logo = driver.findElement(By.cssSelector("img[src='/img/logo.d7557277.svg']")); //finds the logo
         String docuport = logo.getAttribute("alt"); // gets the attribute alt from the logo

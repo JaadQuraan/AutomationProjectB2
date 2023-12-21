@@ -29,6 +29,23 @@ public class BrowserUtils {
         }
         assertTrue(driver.getTitle().toLowerCase().contains(expectedTitle));
     }
+    /**
+     * switches to the new window by the exact title
+     * returns to original window if the window with given title not found
+     * @param driver
+     * @param targetTitle
+     *
+     */
+    public static void switchToWindow(WebDriver driver, String targetTitle){
+        String origin = driver.getWindowHandle();
+        for (String handle : driver.getWindowHandles()){
+            driver.switchTo().window(handle);
+            if(driver.getTitle().contains(targetTitle)){
+                return; //Ends the method and returns the method at the end
+            }
+        }
+        driver.switchTo().window(origin);
+    }
 
 }
 
