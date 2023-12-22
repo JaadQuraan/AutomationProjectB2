@@ -14,7 +14,7 @@ public class DocuportUtils {
      * logins to the docuport application
      * @param driver, which initialized in test base
      * @param role, comes from docuport constants
-     * @author nadir
+     * @author jaad
      */
     public static void login(WebDriver driver, String role) throws InterruptedException {
         //driver.get("https://beta.docuport.app/");
@@ -55,7 +55,7 @@ public class DocuportUtils {
     /**
      * logs out from the application
      * @param driver
-     * @author nadir
+     * @author jaad
      */
     public static void logOut(WebDriver driver){
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
